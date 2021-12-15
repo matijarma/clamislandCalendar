@@ -17,7 +17,7 @@ $ukupno = $i-1;
 
 //extract, sort and format the values
 for($i=1;$i<=$ukupno;$i++){
-	$pearltraits[$i] = $sve[$i]['B'];
+	$pearltraits[$i] = addslashes(addcslashes($sve[$i]['B']));
 	$s = " 01:00";
 	if($sve[$i]['D'] == "13:00 (1 p.m.)")
 		$s = " 13:00";
